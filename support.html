@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="support.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="/logopng/logo.png" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Let us know how we did!</h1>
+        <form id="feedback_form" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <span id="name-error" class="error" style="display: none"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <span id="email-error" class="error" style="display: none"></span>
+              </div>
+            <div class="form-group">
+                <label for="review">Review</label>
+                <textarea id="review" name="review" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="newsletter">Subscribe to our Newsletter for updates and deals!</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+            <input type="submit" id="submit-btn" value="submit">
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023, Funko Fiesta, All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="support.js"></script>
+</body>
+</html>

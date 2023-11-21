@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html">
-            <img src="/logopng/logo.png" class="logo"></a>
+                <img src="/logopng/logo.png" class="logo"></a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="product.html">Products</a></li>
@@ -20,7 +21,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <div class="hero">
         <img src="/logopng/FullLogo_NoBuffer.jpg" alt="Full Logo Image">
         <div class="hero-content">
@@ -28,11 +29,38 @@
         </div>
     </div>
 
+    <div class="carousel">
+        <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+        <div class="slide">
+            <a href="product.html"><img src="/funkopng/sparklyBatman.png" alt="Image 1" /></a>
+            <div class="slide-text">Exclusive POP! Figures</div>
+        </div>
+        <div class="slide">
+            <a href="product.html"><img src="/funkopng/zoro.png" alt="Image 2" /></a>
+            <div class="slide-text">Anime POP! Figures</div>
+        </div>
+        <div class="slide">
+            <a href="product.html"><img src="/funkopng/kaido.png" alt="Image 3" /></a>
+            <div class="slide-text">Super POP! Figures</div>
+        </div>
+        <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+    </div>
+
     <footer>
         <div class="footer-container">
+            <div class="social-media-links">
+                <a href="#"><img class="sIcons" src="icons/fb.png" alt="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#"><img class="sIcons" src="icons/twit.png" alt="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#"><img class="sIcons" src="icons/ig.png" alt="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#"><img class="sIcons" src="icons/li.png" alt="linkedin"><i class="fa fa-linked"></i></a>
+            </div>
+            <div class="business-hours">
+                <p>Business Hours: Monday-Friday 9am-6pm</p>
+            </div>
             <p>&copy; 2023, Funko Fiesta, All Rights Reserved</p>
         </div>
     </footer>
-    
+    <script src="index.script"></script>
 </body>
+
 </html>

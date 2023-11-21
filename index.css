@@ -1,9 +1,7 @@
-
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    
 }
 
 .hero {
@@ -12,7 +10,7 @@ body {
 }
 
 .hero img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -41,14 +39,72 @@ body {
 
 .btn:hover {
     background-color: #0056b3;
-} 
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .prev-btn,
+    .next-btn {
+        font-size: 30px;
+        padding: 5px 10px;
+    }
+}
 
 @media screen and (max-width: 800px) {
-    .hero-content{
-      width: 5px; 
-      height: 5px; 
+    .hero-content {
+        width: 5px;
+        height: 5px;
     }
-    .btn{
-        padding: 0;
+
+    .btn {
+        display: none;
     }
-  }
+}

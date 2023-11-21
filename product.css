@@ -1,4 +1,4 @@
-body{
+body {
     overflow: scroll;
     height: 100%;
 }
@@ -14,7 +14,7 @@ body{
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
-    
+
 }
 
 .grid-item img {
@@ -27,13 +27,13 @@ body{
 }
 
 @media screen and (max-width: 800px) {
-    .grid-container{
+    .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
-  }
+}
 
 @media screen and (max-width: 480px) {
-    .grid-container{
+    .grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
-  }
+}

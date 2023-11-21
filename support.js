@@ -12,17 +12,13 @@ function validateForm() {
     nameError.innerHTML = "Name is required";
     nameError.style.display = "block";
     return false;
-  } else {
-    nameError.style.display = "none";
   }
 
   // Check if the email is empty
   if (email.trim() === "") {
     emailError.innerHTML = "Email is required";
     emailError.style.display = "block";
-    return false; 
-  } else {
-    emailError.style.display = "none";
+    return false;
   }
   return true;
 }
